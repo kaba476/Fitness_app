@@ -31,14 +31,45 @@
 
   <title>flutter_application_1</title>
   <link rel="manifest" href="manifest.json">
+  <style>
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: #0F1419;
+      color: #ffffff;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    }
+    #flutter-container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    #flutter-container h1 {
+      font-size: 20px;
+      font-weight: 800;
+      margin: 0;
+      letter-spacing: -0.2px;
+    }
+    #flutter-container p {
+      margin: 10px 0 0 0;
+      color: rgba(255,255,255,0.6);
+    }
+  </style>
 </head>
 <body>
   <noscript>
     <p>Activez JavaScript pour voir l'application Flutter.</p>
   </noscript>
   <div id="flutter-container">
-    <h1>Chargement de Mon App Flutter Web...</h1>
+    <div>
+      <h1>Chargement de ton app…</h1>
+      <p>Si l’aperçu Vercel ne charge pas tout de suite, clique pour voir la version complète.</p>
+    </div>
   </div>
-  <script src="flutter_bootstrap.js" async></script>
+  <script src="flutter_bootstrap.js" defer></script>
 </body>
 </html>
